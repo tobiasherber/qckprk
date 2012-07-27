@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Restaurants Page</title>
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3",autoHeight:false });
+
+				//Autocomplete
+				$("#autocomplete").autocomplete({
+					source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "python", "c", "scala", "groovy", "haskell", "perl"]
+				});
+
+				// Button
+				$("#button").button();
+				$("#radioset").buttonset();
+
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Ok": function() {
+							$(this).dialog("close");
+						},
+						"Cancel": function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+
+				// Dialog Link
+				$('#dialog_link').click(function(){
+					$('#dialog').dialog('open');
+					return false;
+				});
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+
+				// Slider
+				$('#slider').slider({
+					range: true,
+					values: [17, 67]
+				});
+
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
+
+	</head>
+	<body>
+
+
+  <body id="restaurants">
+
+
+  <div id="iphone">
+    <div id="scroll">
+    <div id="mobile-view">
+
+
+      <header>
+        <div class="wrapper">
+
+          <a class="logo" href="front-page.html" title="">Santa Monica</a>
+
+
+          <nav>
+            <ul id="menu-primary-nav" class="">
+              <li class="about"><a href="about.html">About</a></li>
+              <li class="landmarks"><a class="active" href="landmarks.html">Landmarks</a></li>
+              <li class="events"><a href="events.html">Events</a></li>
+              <li class="restaurants"><a href="restaurants.html">Restaurants</a></li>
+              <li class="parking"><a href="parking.html">Parking</a></li>
+              <li class="login"><a href="login.html">Log In</a></li>            
+            </ul>
+          </nav>
+
+        </div><!-- .wrapper -->
+      </header>
+
+
+
+      <section class="restaurants">
+        
+        <h1>Restaurants</h1>
+        
+    		<!-- Accordion -->
+    		<div id="accordion">
+
+    			<div>
+
+            <h3><a href="#">About Santa Monica Restaurants</a></h3>
+            <div>
+                <p>Though known for its 340 annual days of sunshine, Santa Monica has a range of restaurant offerings that are sure to please any palate.</p>
+            </div>
+
+    			</div>
+    			
+    			
+    			<div>
+    				<h3><a href="#">The Lobster</a></h3>
+    				<div>
+              <article>
+                <div class="wrapper">
+                  <div class="highlight">
+                    <img src="" title="" alt="" width="250" height="141">
+                  </div><!-- .highlight -->
+                  <div class="fast-action">
+                    <button class="quick-park">Quick Park</button>
+                  </div>
+                  <aside class="detail">
+                    <ul>
+                      <li class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</li><!-- .description -->
+                    </ul>
+                    <p class="adr">
+                      <span class="street">920 Santa Monica Blvd</span><br>
+                      <span class="city">Santa Monica</span>, <span class="state">CA</span> <span class="zip">90401</span><br>
+
+                      <small class="coordinates">
+                        <span class="lat">Latitude</span>, <span class="lng">Longitude</span>
+                      </small>
+                    </p><!-- .adr -->
+                  </aside><!-- .details -->
+                </div><!-- .wrapper -->
+              </article>
+    				</div>
+    			</div>
+
+
+    			<div>
+    				<h3><a href="#">Mariasol Restaurant</a></h3>
+    				<div>
+              <article>
+                <div class="wrapper">
+                  <div class="highlight">
+                    <img src="" title="" alt="" width="250" height="141">
+                  </div><!-- .highlight -->
+                  <div class="fast-action">
+                    <button class="quick-park">Quick Park</button>
+                  </div>
+                  <aside class="detail">
+                    <ul>
+                      <li class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</li><!-- .description -->
+                    </ul>
+                    <p class="adr">
+                      <span class="street">920 Santa Monica Blvd</span><br>
+                      <span class="city">Santa Monica</span>, <span class="state">CA</span> <span class="zip">90401</span><br>
+
+                      <small class="coordinates">
+                        <span class="lat">Latitude</span>, <span class="lng">Longitude</span>
+                      </small>
+                    </p><!-- .adr -->
+                  </aside><!-- .details -->
+                </div><!-- .wrapper -->
+              </article>
+    				</div>
+    			</div>
+
+
+    			<div>
+    				<h3><a href="#">The Penthouse</a></h3>
+    				<div>
+              <article>
+                <div class="wrapper">
+                  <div class="highlight">
+                    <img src="" title="" alt="" width="250" height="141">
+                  </div><!-- .highlight -->
+                  <div class="fast-action">
+                    <button class="quick-park">Quick Park</button>
+                  </div>
+                  <aside class="detail">
+                    <ul>
+                      <li class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</li><!-- .description -->
+                    </ul>
+                    <p class="adr">
+                      <span class="street">920 Santa Monica Blvd</span><br>
+                      <span class="city">Santa Monica</span>, <span class="state">CA</span> <span class="zip">90401</span><br>
+
+                      <small class="coordinates">
+                        <span class="lat">Latitude</span>, <span class="lng">Longitude</span>
+                      </small>
+                    </p><!-- .adr -->
+                  </aside><!-- .details -->
+                </div><!-- .wrapper -->
+              </article>
+    				</div>
+    			</div>
+
+
+    			<div>
+    				<h3><a href="#">Sonoma Wine Garden</a></h3>
+    				<div>
+              <article>
+                <div class="wrapper">
+                  <div class="highlight">
+                    <img src="" title="" alt="" width="250" height="141">
+                  </div><!-- .highlight -->
+                  <div class="fast-action">
+                    <button class="quick-park">Quick Park</button>
+                  </div>
+                  <aside class="detail">
+                    <ul>
+                      <li class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</li><!-- .description -->
+                    </ul>
+                    <p class="adr">
+                      <span class="street">920 Santa Monica Blvd</span><br>
+                      <span class="city">Santa Monica</span>, <span class="state">CA</span> <span class="zip">90401</span><br>
+
+                      <small class="coordinates">
+                        <span class="lat">Latitude</span>, <span class="lng">Longitude</span>
+                      </small>
+                    </p><!-- .adr -->
+                  </aside><!-- .details -->
+                </div><!-- .wrapper -->
+              </article>
+    				</div>
+    			</div>
+
+
+    			<div>
+    				<h3><a href="#">Seaside Grill</a></h3>
+    				<div>
+              <article>
+                <div class="wrapper">
+                  <div class="highlight">
+                    <img src="" title="" alt="" width="250" height="141">
+                  </div><!-- .highlight -->
+                  <div class="fast-action">
+                    <button class="quick-park">Quick Park</button>
+                  </div>
+                  <aside class="detail">
+                    <ul>
+                      <li class="description">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</li><!-- .description -->
+                    </ul>
+                    <p class="adr">
+                      <span class="street">920 Santa Monica Blvd</span><br>
+                      <span class="city">Santa Monica</span>, <span class="state">CA</span> <span class="zip">90401</span><br>
+
+                      <small class="coordinates">
+                        <span class="lat">Latitude</span>, <span class="lng">Longitude</span>
+                      </small>
+                    </p><!-- .adr -->
+                  </aside><!-- .details -->
+                </div><!-- .wrapper -->
+              </article>
+    				</div>
+    			</div>
+
+
+
+    			
+    		</div><!-- Accordion -->
+
+      </section>
+ 
+
+      <footer class="">
+        <div class="wrapper">
+
+          <div class="nav">
+            <ul id="menu-footer-nav" class="">
+              <li class="privacy"><a href="">Privacy</a></li>
+              <li class="terms"><a href="">Terms</a></li>
+            </ul>
+          </div><!-- .nav -->
+
+          <p class="powered-by">Powered by <a href=""><strong>QckPrk</strong></a></p>
+
+        </div><!-- .wrapper -->
+      </footer>
+
+
+
+    </div><!-- #mobile-view -->
+    </div>
+  </div><!-- #iphone -->
+
+
+	</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Front Page</title>
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3",autoHeight:false });
+
+				//Autocomplete
+				$("#autocomplete").autocomplete({
+					source: [
+				    "Coloft",
+				    "Cross Campus",
+				    "Coworks",
+
+					  "Santa Monica Pier",
+					  "Pacific Park",
+					  "Trapeze School of New York",
+					  "Ocean Front Walk",
+					  "Looff Hippodrome Carousel",
+					  "Playland Arcade",
+					  "Santa Monica Pier Aquarium",
+
+					  "Annenberg Community Beach House",
+					  "South Bay Bicycle Trail",
+					  "Perry's Beach Butler",
+					  "Surfing - Towers 18 and 20",
+					  "Surfing - Towers 28 and 29",
+					  "Beach Volleyball Courts",
+
+					  "Santa Monica Farmers' Market",
+					  "Santa Monica's Muscle Beach",
+
+				    "International Chess Park",
+				    "Clover Park",
+				    "Joslyn Park",
+				    "Marine Park",
+				    "Memorial Park",
+				    "Palisades Park",
+				    "Reed Park",
+				    "Santa Monica Civic Center Parks",
+				    "Virginia Avenue Park",
+
+				    "Beach House Parking Lot",
+				    "Pier Deck Parking Lot",
+				    "Parking Structure 1",
+				    "Parking Structure 2",
+				    "Parking Structure 3",
+				    "Parking Structure 4",
+				    "Parking Structure 5",
+				    "Parking Structure 6",
+				    "Parking Structure 7",
+				    "Parking Structure 8",
+				    "Parking Structure 9",
+				    "Library Parking Lot",
+				    "Civic Center Parking Lot",
+
+				    "Santa Monica Library",
+
+				    "The Lobster",
+				    "Loews Santa Monica Beach Pool Deck",
+				    "Mariasol Restaurant",
+				    "Pacific Wheel",
+				    "The Penthouse",
+				    "Santa Monica Mountains",
+				    "Singing Beach Chairs",
+				    "Sonoma Wine Garden",
+				    "City Hall",
+				    "Santa Monica Civic Auditorium",
+				    "Camera Obscura",
+				    "Twilight Dance Series at the Pier",
+				    "Santa Monica Drive-In Movies at the Pier",
+					]
+				});
+
+				// Button
+				$("#button").button();
+				$("#radioset").buttonset();
+
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Ok": function() {
+							$(this).dialog("close");
+						},
+						"Cancel": function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+
+				// Dialog Link
+				$('#dialog_link').click(function(){
+					$('#dialog').dialog('open');
+					return false;
+				});
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+
+				// Slider
+				$('#slider').slider({
+					range: true,
+					values: [17, 67]
+				});
+
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
+
+	</head>
+
+	<body id="front-page">
+
+  <div id="iphone">
+    <div id="scroll">
+      <div id="mobile-view">
+
+        <header>
+          <div class="wrapper">
+
+            <a class="logo" href="front-page.html" title="">Santa Monica</a>
+
+            <nav>
+              <ul id="menu-primary-nav" class="">
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="landmarks"><a class="active" href="landmarks.html">Landmarks</a></li>
+                <li class="events"><a href="events.html">Events</a></li>
+                <li class="restaurants"><a href="restaurants.html">Restaurants</a></li>
+                <li class="parking"><a href="parking.html">Parking</a></li>
+                <li class="login"><a href="login.htm">Log In</a></li>            
+              </ul>
+            </nav>
+
+          </div><!-- .wrapper -->
+        </header>
+
+        <a id="quick-park" class="button" href="">Quick Park</a>
+
+    		<!-- Autocomplete -->
+        <div class="search">
+    		  <div>
+    			  <input id="autocomplete" style="z-index: 100; position: relative" title="type &quot;a&quot;" />
+    		  </div>
+        </div>
+
+    		<!-- Accordion -->
+    		<div id="accordion">
+    			<div>
+
+            <h3><a href="#">About Santa Monica</a></h3>
+            <div>
+              <p>Santa Monica is an unforgettable seaside city, with easy access to metropolitan Los Angeles and the rest of Southern California. Equal parts coastal getaway and urban center, Santa Monica serves as a perfect base for vacationers and business travelers alike.</p>
+            </div>
+
+    			</div>
+    			<div>
+    				<h3><a href="#">Historic Landmarks</a></h3>
+    				<div>
+  				
+    				  <article>
+    				        <h4><a href="">Santa Monica Pier</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+  				
+    				  <article>
+    				        <h4><a href="">Camera Obscura</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+
+    				  <article>
+    				        <h4><a href="">City Hall</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+  				
+    				</div>
+    			</div>
+    			<div>
+    				<h3><a href="#">Upcoming Events</a></h3>
+    				<div>
+
+    				  <article>
+    				        <h4><a href="">Sunset Swim at the Beach House</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+  				
+    				  <article>
+    				        <h4><a href="">Vilebrequin Beach Volleyball Games</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+
+    				  <article>
+    				        <h4><a href="">KCET Cinema Series</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+  				
+    				</div>
+    			</div>
+    			<div>
+    				<h3><a href="#">Popular Restaurants</a></h3>
+    				<div>
+
+    				  <article>
+    				        <h4><a href="">The Lobster</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+  				
+    				  <article>
+    				        <h4><a href="">Mariasol Restaurant</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+
+    				  <article>
+    				        <h4><a href="">Sonoma Wine Garden</a></h4>
+    				        <a href=""><img src="" title="" alt="" width="250" height="141"></a>
+    				  </article>
+  				
+    				</div>
+    			</div>
+    			<div>
+    				<h3><a href="#">Nearby Parking</a></h3>
+    				<div>
+
+    				  <article>
+    				        <h4><a href="">Beach House Parking Lot</a></h4>
+                    <p class="lot-space yellow"><strong class="availability">68</strong> / <span class="capacity">274</span> spaces available</p>
+    				  </article>
+  				
+    				  <article>
+    				        <h4><a href="">Pier Deck Parking Lot</a></h4>
+                    <p class="lot-space red"><strong class="availability">18</strong> / <span class="capacity">277</span> spaces available</p>
+    				  </article>
+
+    				  <article>
+    				        <h4><a href="">Civic Center Parking Lot</a></h4>
+                    <p class="lot-space green"><strong class="availability">522</strong> / <span class="capacity">744</span> spaces available</p>
+    				  </article>
+  				
+    				</div>
+    			</div>
+    		</div>
+
+
+        <footer>
+          <div class="wrapper">
+
+            <div class="nav">
+              <ul id="menu-footer-nav" class="">
+                <li class="privacy"><a href="">Privacy</a></li>
+                <li class="terms"><a href="">Terms</a></li>
+              </ul>
+            </div><!-- .nav -->
+
+            <p class="powered-by">Powered by <a href=""><strong>QckPrk</strong></a></p>
+
+          </div><!-- .wrapper -->
+        </footer>
+
+      </div><!-- #mobile-view -->
+    </div><!-- #scroll -->
+  </div><!-- #iphone -->
+
+	</body>
+</html>
