@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>QuickPark Page</title>
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<link type="text/css" href="css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				// Accordion
+				$("#accordion").accordion({ header: "h3",autoHeight:false });
+
+				//Autocomplete
+				$("#autocomplete").autocomplete({
+					source: ["c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "python", "c", "scala", "groovy", "haskell", "perl"]
+				});
+
+				// Button
+				$("#button").button();
+				$("#radioset").buttonset();
+
+				// Tabs
+				$('#tabs').tabs();
+
+				// Dialog
+				$('#dialog').dialog({
+					autoOpen: false,
+					width: 600,
+					buttons: {
+						"Ok": function() {
+							$(this).dialog("close");
+						},
+						"Cancel": function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+
+				// Dialog Link
+				$('#dialog_link').click(function(){
+					$('#dialog').dialog('open');
+					return false;
+				});
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+
+				// Slider
+				$('#slider').slider({
+					range: true,
+					values: [17, 67]
+				});
+
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
+
+	</head>
+
+
+	<body id="qpark">
+
+
+  <div id="iphone">
+    <div id="scroll">
+    <div id="mobile-view">
+
+
+
+
+
+      <header>
+        <div class="wrapper">
+
+          <a class="logo" href="index.html" title="">Santa Monica</a>
+
+
+          <nav>
+            <ul id="menu-primary-nav" class="">
+              <li class="about"><a href="about.html">About</a></li>
+              <li class="landmarks"><a class="active" href="landmarks.html">Landmarks</a></li>
+              <li class="events"><a href="events.html">Events</a></li>
+              <li class="restaurants"><a href="restaurants.html">Restaurants</a></li>
+              <li class="parking"><a href="parking.html">Parking</a></li>
+              <li class="login"><a href="">Log In</a></li>            
+            </ul>
+          </nav>
+
+        </div><!-- .wrapper -->
+      </header>
+
+
+
+      <section class="qpark">
+        
+        <h1>Directions</h1>
+        
+    		<!-- Accordion -->
+    		<div id="accordion">
+
+    			<div>
+            <h3><a href="#">Driving from Coloft</a></h3>
+            <div>
+              <ol>
+                <li>Head <strong>southwest</strong> on <strong>Santa Monica Blvd</strong> toward <strong>9th St</strong></li>
+                <li>Turn right onto <strong>7th St</strong></li>
+                <li><strong>Library Parking Lot</strong> is on the <strong>left</strong> before Arizona Ave</li>
+              </ol>
+
+              <p class="lot-space green"><strong class="availability">508</strong> / <span class="capacity">525</span> spaces available</p>
+
+                <img src="img/demomap2.jpg" width="250" height="300" title="Library Parking Lot Entrance" alt="Entrance to the Library Parking Lot">
+              </div>
+    			</div>
+    			
+    		</div><!-- Accordion -->
+
+
+
+        
+      </section>
+ 
+
+      <footer class="">
+        <div class="wrapper">
+
+          <div class="nav">
+            <ul id="menu-footer-nav" class="">
+              <li class="privacy"><a href="">Privacy</a></li>
+              <li class="terms"><a href="">Terms</a></li>
+            </ul>
+          </div><!-- .nav -->
+
+          <p class="powered-by">Powered by <a href=""><strong>QckPrk</strong></a></p>
+
+        </div><!-- .wrapper -->
+      </footer>
+
+
+
+
+
+    </div><!-- #mobile-view -->
+    </div>
+  </div><!-- #iphone -->
+
+
+
+
+	</body>
+</html>
