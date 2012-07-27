@@ -56,7 +56,6 @@ ul#icons span.ui-icon {float: left; margin: 0 4px;}
   padding-top:260px;
 }
 
-
 header {
   position:absolute;
   top:0;
@@ -77,7 +76,6 @@ header {
 .logo:hover {
   color:#fff;
 }
-
 
 /* Nav hack to create dropdown menu */
 nav {
@@ -132,7 +130,6 @@ nav:hover {
       }
 
 
-
 section h1 {
   text-align:center;
   color:#fff;
@@ -141,12 +138,6 @@ section h1 {
   text-shadow: 1px 1px 3px #000000;
   filter: dropshadow(color=#000000, offx=1, offy=1);
 }
-
-
-
-
-
-
 
 
 /* Quick Park Button Styles */
@@ -184,7 +175,6 @@ section h1 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9ff96', endColorstr='#4bb914',GradientType=0 ); /* IE6-9 */
 }
 
-
 /* Search Bar */
 .search {
   border:5px solid #404040;
@@ -204,13 +194,7 @@ section h1 {
   background:transparent url(../img/search-icon.png) no-repeat right center;
 }
 
-
-
-
 p {font-size:13px;}
-
-
-
 
 footer {}
   footer .nav {float:left;margin-top:50px}
@@ -242,9 +226,6 @@ p.powered-by {float:right;margin-right:30px;color:#fff;margin-top:50px;padding:2
   filter: dropshadow(color=#000000, offx=1, offy=1);
 }
 
-
-
-
 article h4 {
   margin:15px 0 5px;
   padding:0;
@@ -270,7 +251,6 @@ article aside ul {list-style:none;padding:0;margin:15px 0 0;}
 .green {background-color:#ccffcc !important;}
 .yellow {background-color:#ffffcc !important;}
 .red {background-color:#ff9999 !important;}
-
 
 .lot-space strong.availability {
   font-size:32px;
