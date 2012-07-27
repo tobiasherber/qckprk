@@ -234,7 +234,7 @@ footer {}
     color:#7CE944;
   }
 
-p.powered-by {float:right;margin-right:30px;color:#fff;margin-top:50px;}
+p.powered-by {float:right;margin-right:30px;color:#fff;margin-top:50px;padding:2px 8px;-webkit-border-radius: 5px;border-radius: 5px;background-color:#1a1a1a}
 .powered-by a {text-decoration:none;color:#fff;}
 
 .powered-by, .nav{
